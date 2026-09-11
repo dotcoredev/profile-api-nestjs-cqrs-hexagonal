@@ -37,7 +37,7 @@ jobs:
         with:
           filters: |
             api:
-              - 'apps/api/**'
+              - 'apps/gateway/**'
               - 'packages/**'
               - 'package.json'
               - 'pnpm-lock.yaml'
@@ -85,7 +85,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .
-          file: ./apps/api/Dockerfile
+          file: ./apps/gateway/Dockerfile
 
           push: true
 
