@@ -1,0 +1,8 @@
+{
+	"extends": ["@orbitral/core/configs/biome"],
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	}
+}

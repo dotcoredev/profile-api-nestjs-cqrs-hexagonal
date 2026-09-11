@@ -1,0 +1,15 @@
+.git
+.github
+**/node_modules
+**/dist
+**/build
+**/.turbo
+**/coverage
+**/*.tsbuildinfo
+**/*.log
+**/.env
+**/.env.*
+**/prisma/generated
+.pnpm-store
+.agents
+.codex

@@ -1,0 +1,34 @@
+model Profile {
+  id          String       @id @default(nanoid())
+  name        String
+  description String
+
+  skills      Skill[]
+  experience  Experience[]
+  projects    Project[]
+}
+
+model Skill {
+  id        String  @id @default(nanoid())
+  name      String
+
+  profileId String
+  profile   Profile @relation(fields: [profileId], references: [id])
+}
+
+model Experience {
+  id        String  @id @default(nanoid())
+  company   String
+  position  String
+
+  profileId String
+  profile   Profile @relation(fields: [profileId], references: [id])
+}
+
+model Project {
+  id        String  @id @default(nanoid())
+  name      String
+
+  profileId String
+  profile   Profile @relation(fields: [profileId], references: [id])
+}
