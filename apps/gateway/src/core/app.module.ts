@@ -19,6 +19,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 			driver: ApolloDriver,
 			autoSchemaFile: true,
 			graphiql: true,
+			introspection: true,
 		}),
 	],
 	controllers: [HealthController],
